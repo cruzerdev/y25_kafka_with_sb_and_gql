@@ -22,7 +22,7 @@ kafka-topics.bat --describe --topic <topic_name> --bootstrap-server localhost:90
 **Result**:
 PS C:\kafka_2.13-3.9.1\bin\windows> .\kafka-topics.bat --describe --topic my-topic --bootstrap-server localhost:9092
 Topic: my-topic TopicId: _9a2SOehTO2IZxzdA2em9Q PartitionCount: 3       ReplicationFactor: 1    Configs:
-        Topic: my-topic Partition: 0    Leader: 0       Replicas: 0     Isr: 0  Elr: N/A        LastKnownElr: N/A
+        <p>Topic: my-topic Partition: 0    Leader: 0       Replicas: 0     Isr: 0  Elr: N/A        LastKnownElr: N/A</p>
         Topic: my-topic Partition: 1    Leader: 0       Replicas: 0     Isr: 0  Elr: N/A        LastKnownElr: N/A
         Topic: my-topic Partition: 2    Leader: 0       Replicas: 0     Isr: 0  Elr: N/A        LastKnownElr: N/A
 

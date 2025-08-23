@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.kafka.config.TopicBuilder;
 
+
 @Configuration
 @Profile("local")
 public class KafkaConfig {
@@ -17,9 +18,10 @@ public class KafkaConfig {
     @Bean
     public NewTopic transactionsEvents(){
         return TopicBuilder.name(topic)
-                .partitions(3)
-                .replicas(3)
+                .partitions(1)
+                .replicas(1)
                 .build();
     }
+
 
 }

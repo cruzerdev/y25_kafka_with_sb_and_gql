@@ -18,8 +18,8 @@ public class KafkaConfig {
     @Bean
     public NewTopic transactionsEvents(){
         return TopicBuilder.name(topic)
-                .partitions(1)
-                .replicas(1)
+                .partitions(2)
+                .replicas(2)
                 .build();
     }
 

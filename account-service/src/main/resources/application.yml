@@ -21,10 +21,10 @@ spring:
     activate:
       on-profile: local
   kafka:
-    topic: trans-event
+    topic: tx-event-v2
     template:
-      default-topic: trans-event
+      default-topic: tx-event-v2
     producer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: localhost:9092, localhost:9094
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
